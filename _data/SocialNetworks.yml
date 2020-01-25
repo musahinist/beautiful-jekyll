@@ -13,7 +13,7 @@ facebook:
 
 github:
   name: "GitHub"
-  baseURL: "https://github.com/"
+  baseURL: "https://github.com/musahinist"
   icon: "fa-github"
 
 twitter:
