@@ -14,6 +14,44 @@ You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll w
 
 ## Here is a secondary heading
 
+````typescript
+import { Model } from 'mongoose';
+import { Injectable } from '@nestjs/common';
+
+import { InjectModel } from '@nestjs/mongoose';
+
+import { ITeacher } from './interface/teacher.interface';
+import { CreateTeacherDto } from './dto/create-teacher.dto';
+
+@Injectable()
+export class TeachersService {
+
+    constructor(@InjectModel('Teacher') private readonly teacherModel: Model<ITeacher>) { }
+
+    async findAll(): Promise<ITeacher[]> {
+        return await this.teacherModel.find().exec();
+    }
+
+    async findOne(options: object): Promise<ITeacher> {
+        return await this.teacherModel.findOne(options).exec();
+    }
+
+    async findById(id: string): Promise<ITeacher> {
+        return await this.teacherModel.findById(id).exec();
+    }
+    async create(createTeacher: CreateTeacherDto): Promise<ITeacher> {
+        const newTeacher = new this.teacherModel(createTeacher);
+        return await newTeacher.save();
+    }
+    async update(id: string, updateTeacher: CreateTeacherDto): Promise<ITeacher> {
+        return await this.teacherModel.findByIdAndUpdate(id, updateTeacher, { new: true });
+    }
+    async delete(id: string): Promise<ITeacher> {
+        return await this.teacherModel.findByIdAndRemove(id);
+    }
+}
+````
+
 Here's a useless table:
 
 | Number | Next number | Previous number |
@@ -33,7 +71,7 @@ It can also be centered!
 ![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
 
 Here's a code chunk:
-
+`asdasdsdd`
 ~~~
 var foo = function(x) {
   return(x + 5);
