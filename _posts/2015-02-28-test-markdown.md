@@ -2,7 +2,7 @@
 layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+gh-repo: musahinist/musahinist.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
@@ -17,11 +17,11 @@ You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll w
 Here's a useless table:
 
 | Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| :----- | :---------- | :-------------- |
+| Five   | Six         | Four            |
+| Ten    | Eleven      | Nine            |
+| Seven  | Eight       | Six             |
+| Two    | Three       | One             |
 
 
 How about a yummy crepe?
