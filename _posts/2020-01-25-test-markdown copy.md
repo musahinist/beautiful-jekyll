@@ -52,7 +52,7 @@ foo(3)
 
 And here is the same code yet again but with line numbers:
 
-{% highlight typescript linenos %}
+{% highlight typescript linenos=table %}
 import { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 
