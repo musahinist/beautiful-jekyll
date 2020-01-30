@@ -240,6 +240,7 @@ GEM
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.6.1)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -248,6 +249,7 @@ DEPENDENCIES
   github-pages (= 197)
   jekyll-paginate
   tzinfo-data
+  wdm
 
 BUNDLED WITH
    1.17.2

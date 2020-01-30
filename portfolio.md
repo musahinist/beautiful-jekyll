@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-bigimg: /img/tetrahedrals.jpg
+title: Porfolio
+bigimg: /img/pattern.png
 subtitle: Why you'd want to go on a date with me
 ---
 
