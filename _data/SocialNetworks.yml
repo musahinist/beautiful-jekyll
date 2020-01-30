@@ -58,7 +58,7 @@ instagram:
 
 youtube:
   name: "YouTube"
-  baseURL: "https://www.youtube.com/"
+  baseURL: "https://www.youtube.com/channel/"
   icon: "fa-youtube"
 
 spotify:
